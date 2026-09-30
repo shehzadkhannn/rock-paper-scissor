@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.bg-card {
+    width: 100%;
+    min-height: 100vh;
+    background-color: darkolivegreen;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 7rem 2rem;
+}
+
+.inner-card {
+    width: 100%;
+    max-width: 600px;
+
+    background-color: darkgreen;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    background-color: darkcyan;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+}
+
+.img-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 3rem;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.scor-bord {
+    font-size: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+    margin-top: 3rem;
+}
+
+.msg {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+#msg {
+    background-color: darkcyan;
+
+    padding: 2rem;
+    border-radius: 1rem;
+
+    max-width: 90%;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .bg-card {
+        padding: 4rem 1.5rem;
+    }
+
+    .inner-card {
+        max-width: 650px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .scor-bord {
+        font-size: 2.5rem;
+        gap: 25px;
+    }
+
+    #msg {
+        padding: 1.5rem;
+    }
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+    .bg-card {
+        padding: 2rem 1rem;
+    }
+
+    .inner-card {
+        border-radius: 1.2rem;
+    }
+
+    h1 {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .img-container {
+        gap: 15px;
+        margin-top: 2rem;
+    }
+
+    .image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .scor-bord {
+        font-size: 1.8rem;
+        gap: 15px;
+        margin-top: 2rem;
+    }
+
+    .msg {
+        padding: 1rem;
+    }
+
+    #msg {
+        padding: 1rem;
+        max-width: 95%;
+        font-size: 1rem;
+    }
+}
